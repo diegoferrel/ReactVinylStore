@@ -1,0 +1,96 @@
+header {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1.5fr 5fr;
+  grid-template-areas: "logo boton";
+  align-items: center;
+  background: #222;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 10px;
+  height: 9vh;
+}
+.logo {
+  font-weight: bold;
+  grid-area: logo;
+  width: 45%;
+  justify-self: center;
+  position: relative;
+  text-align: center;
+  align-self: center;
+}
+nav button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  left: 40%;
+  grid-area: boton;
+  position: relative;
+}
+
+.menu-desplegable {
+  list-style: none;
+  background: #333;
+  padding: 0.2rem;
+  position: fixed;
+  top: 78px;
+  right: 3px;
+  transform: translateX(120%);
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+  height: 17vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+  width: 20%;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  height: 100%;
+  align-content: center;
+}
+nav ul li{
+    width: 100%;
+    height: 100%;
+}
+.menu-desplegable.show {
+  transform: translateX(0);
+
+}
+@media screen and (min-width: 768px) {
+  .menu-desplegable {
+    position: relative;
+    flex-direction: row;
+    background: none;
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+    top: 0;
+    width: 42%;
+    height: auto;
+  }
+  nav{
+    padding: 0 3% 0 0 ;
+  }
+  nav ul li:hover{
+    background-color: black;
+  }
+  .logo{
+    width: 29%;
+  }
+
+  nav button {
+    display: none;
+  }
+}
+@media screen and (min-width:1024px) {
+  header{
+    height: 13vh;
+  }
+}

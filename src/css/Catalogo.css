@@ -1,0 +1,96 @@
+.catalogo {
+  padding: 1rem;
+}
+
+.catalogo h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+#buscador {
+  width: 80%;
+  height: 2rem;
+}
+
+#buscar-btn {
+  width: 14%;
+  height: 2rem;
+  background: white;
+  font-family: 'Jockey One';
+  transition: 0.2s ease-in-out;
+}
+
+#buscar-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.card {
+  background: #222;
+  padding: 0.5rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.card p {
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+}
+
+.card button {
+  padding: 0.3rem 0.5rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+  font-family: 'Jockey One';
+}
+
+.details-btn {
+  position: relative;
+  top: 3px;
+}
+
+.card button:hover {
+  background: #444;
+  color: #fff;
+}
+@media screen and (min-width:768px) {
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }    
+}
+@media screen and (min-width:1024px){
+    .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+}

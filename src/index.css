@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  
+  background: #111;
+  color: #fff;
+  line-height: 1.6;
+  overflow-x: hidden;
+  height: 100dvh;
+}
+.banner {
+  text-align: center;
+  height: 30vh;
+  background: url('./imagenes/fondo_banner.png') no-repeat center/cover;
+  padding: 9dvh;
+  font-family: "Jockey One", serif;
+
+}
+
+.banner h1 {
+  font-size: 2.4rem;
+}
+
+.banner p {
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
